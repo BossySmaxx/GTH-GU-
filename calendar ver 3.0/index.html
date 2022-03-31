@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <button class="calendar-btn fas fa-calendar"></button>
+
+    <div class="container">
+        <!-- calendar container the LEFT side -->
+
+        <div class="calendar-container">
+            <header class="calendar-header">
+                <!-- <button class="fas cal-btn fa-chevron-left prev"></button> -->
+                <h2>
+                    <span class="date">09</span>
+                    <span class="month">March</span>
+                    <span class="year">2022</span>
+                </h2>
+                <!-- <button class="next fas cal-btn fa-chevron-right"></button> -->
+            </header>
+
+            <!-- date selector start here -->
+            <div class="date-selector">
+                <div name="" id="month-selector">
+                    <label class="label-month " title="select month from here"> Select Month </label>
+                    <div class="months-wrapper">
+                        <span data-value="0">January</span>
+                        <span data-value="1">February</span>
+                        <span data-value="2">March</span>
+                        <span data-value="3">April</span>
+                        <span data-value="4">May</span>
+                        <span data-value="5">June</span>
+                        <span data-value="6">July</span>
+                        <span data-value="7">August</span>
+                        <span data-value="8">September</span>
+                        <span data-value="9">October</span>
+                        <span data-value="10">November</span>
+                        <span data-value="11">December</span>
+                    </div>
+                </div>
+
+                <div name="" id="year-selector" title="select year from here">
+                    <label class="label-year">2022</label>
+                    <div class="year-wrapper">
+                        <span date-value="2021">2021</span>
+                        <span date-value="2022">2022</span>
+                        <span date-value="2023">2023</span>
+                        <span date-value="2023">2024</span>
+                        <span date-value="2023">2025</span>
+                        <span date-value="2023">2026</span>
+                        <span date-value="2023">2027</span>
+                        <span date-value="2023">2028</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sun monday tues..... -->
+            <div class="days-wrapper">
+                <span class="day-field field">SUN</span>
+                <span class="day-field field">MON</span>
+                <span class="day-field field">TUE</span>
+                <span class="day-field field">WED</span>
+                <span class="day-field field">THU</span>
+                <span class="day-field field">FRI</span>
+                <span class="day-field field">SAT</span>
+            </div>
+
+            <!-- 1 2 3 4 6 7.... -->
+            <div class="calendar-wrapper"> </div>
+
+        </div>
+
+        <!-- news container the right side -->
+        <div class="news-container">
+            <header class="news-header">
+                <a href="https://geetauniversity.edu.in">
+                    <img src="./assets/logo.webp" width="170" height="80" alt="GU logo">
+                </a>
+                <h2 style="font-weight: 400;">ACADEMIC CALENDAR</h2>
+            </header>
+            <div class="news-cards-container">
+                <div class="news-card" >
+                    <div class="img-box">
+                        <img src="./assets/news1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div>
+                            <span class="pill" style="background-color: #21346b;">GU</span>
+                            <span class="pill date-pill">9 march 2022</span>
+                        </div>
+                        <h3>Heading 1</h3>
+                        <p class="info">
+                            Lorem ipsum dolor, sit amet 
+                            consectetur adipisicing elit. 
+                            Debitis ex beatae, nemo sapiente
+                            quibusdam saepe? Dolor voluptas,
+                            mollitia soluta at porro 
+                            aspernatur incidunt fugiat 
+                            accusamus alias, perferendis 
+                            optio ex ullam.
+                        </p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="img-box">
+                        <img src="./assets/news1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div>
+                            <span class="pill" style="background-color: #ed7d24;">GEC</span>
+                            <span class="pill date-pill">17 march 2022</span>
+                        </div>
+                        <h3>Heading 1</h3>
+                        <p class="info">
+                            Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit.
+                            Debitis ex beatae, nemo sapiente
+                            quibusdam saepe? Dolor voluptas,
+                            mollitia soluta at porro
+                            aspernatur incidunt fugiat
+                            accusamus alias, perferendis
+                            optio ex ullam.
+                        </p>
+                    </div>
+                </div>
+                <!-- news card 3 -->
+                <div class="news-card">
+                    <div class="img-box">
+                        <img src="./assets/news1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div>
+                            <span class="pill">GU</span>
+                            <span class="pill date-pill">27 march 2022</span>
+                        </div>
+                        <h3>Heading 1</h3>
+                        <p class="info">
+                            Lorem ipsum dolor, sit amet 
+                            consectetur adipisicing elit. 
+                            Debitis ex beatae, nemo sapiente
+                            quibusdam saepe? Dolor voluptas,
+                            mollitia soluta at porro
+                            aspernatur incidunt fugiat
+                            accusamus alias, perferendis
+                            optio ex ullam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- news card 4 -->
+                <div class="news-card">
+                    <div class="img-box">
+                        <img src="./assets/news1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div>
+                            <span class="pill">GU</span>
+                            <span class="pill date-pill">21 february 2022</span>
+                        </div>
+                        <h3>Heading 1</h3>
+                        <p class="info">
+                            Lorem ipsum dolor, sit amet 
+                            consectetur adipisicing elit. 
+                            Debitis ex beatae, nemo sapiente
+                            quibusdam saepe? Dolor voluptas,
+                            mollitia soluta at porro
+                            aspernatur incidunt fugiat
+                            accusamus alias, perferendis
+                            optio ex ullam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- news card 5 -->
+                <div class="news-card">
+                    <div class="img-box">
+                        <img src="./assets/news1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div>
+                            <span class="pill">GU</span>
+                            <span class="pill date-pill">21 December 2023</span>
+                        </div>
+                        <h3>Heading 1</h3>
+                        <p class="info">
+                            Lorem ipsum dolor, sit amet 
+                            consectetur adipisicing elit. 
+                            Debitis ex beatae, nemo sapiente
+                            quibusdam saepe? Dolor voluptas,
+                            mollitia soluta at porro
+                            aspernatur incidunt fugiat
+                            accusamus alias, perferendis
+                            optio ex ullam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- news card 6 -->
+                <div class="news-card">
+                    <div class="img-box">
+                        <img src="./assets/news1.jpg" alt="">
+                    </div>
+                    <div class="content-box">
+                        <div>
+                            <span class="pill">GU</span>
+                            <span class="pill date-pill">12 November 2022</span>
+                        </div>
+                        <h3>Heading 1</h3>
+                        <p class="info">
+                            Lorem ipsum dolor, sit amet 
+                            consectetur adipisicing elit. 
+                            Debitis ex beatae, nemo sapiente
+                            quibusdam saepe? Dolor voluptas,
+                            mollitia soluta at porro
+                            aspernatur incidunt fugiat
+                            accusamus alias, perferendis
+                            optio ex ullam.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/backward-compatibility.js"></script>
+    <script src="./js/calendar.js"></script>
+    <script src="./js/control.js"></script>
+    <script src="./js/highlights.js"></script>
+</body>
+</html>
